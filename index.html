@@ -5,12 +5,28 @@
     <title>树不断长大的动画</title>
     <link rel="stylesheet" href="css/tree.css">
 </head>
-<body>
+<body class="scaled"><!--style="--scale-factor: 7;"-->
+<h1 id="title"></h1>
 <div class="tree">
+    <div id="textL">
+       <div id="1l" class="leftText"></div>
+       <div id="2l" class="leftText"></div>
+       <div id="3l" class="leftText"></div>
+       <div id="4l" class="leftText"></div>
+       <div id="5l" class="leftText"></div>
+    </div>
+    <div id="textR">
+       <div id="1r" class="rightText"></div>
+       <div id="2r" class="rightText"></div>
+       <div id="3r" class="rightText"></div>
+       <div id="4r" class="rightText"></div>
+       <div id="5r" class="rightText"></div>
+    </div>
     <div class="trunk"></div>
 </div>
 
 <script src="js/tree.js"></script>
-
+<script src="js/settext.js"></script>
+<script src="js/animation.js"></script>
 </body>
 </html>

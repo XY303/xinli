@@ -8,6 +8,55 @@ html,body {
     margin: 0;
     align-items: flex-end;
 }
+
+#title {
+    position: fixed;
+    top: 20px;
+}
+
+/*缩放动画区*/
+body {
+    transition: transform 2s ease-in-out;
+    transform-origin: bottom center;
+}
+
+.scaled {
+    transform: scale(var(--scale-factor, 1)); /* 使用CSS变量 */
+}
+/*缩放动画区结束*/
+
+/*文字区*/
+#textL {
+    display: flex;
+    justify-content: space-around;
+    height: 650px;
+    width: 20%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    flex-direction: column-reverse;
+
+}
+.leftText {
+    text-align: right;
+}
+
+#textR {
+    display: flex;
+    justify-content: space-around;
+    height: 650px;
+    width: 20%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    flex-direction: column-reverse;
+}
+.rightText {
+    text-align: left;
+}
+/*文字区结束*/
+
+/*树动画区*/
 .tree {
     position: relative;
     width: 100%;
@@ -16,7 +65,7 @@ html,body {
 }
 .trunk, .branch {
     position: absolute;
-    /*background-color: white;*/
+    background-color: #70643c;
 }
 .trunk {
     width: 10px;
@@ -35,3 +84,4 @@ html,body {
     0% { height: 0; opacity: 0; }
     100% { height: 100px; opacity: 1; }
 }
+/*树动画区结束*/

@@ -27,7 +27,7 @@ function createBranch(parent, x, y, length, angle, depth, delay) {
 
     // 计算下一层树枝的参数
     const newLength = length * 0.7;
-    const newDelay = delay + 1.5; // 延迟0.5秒以等待父树枝生长完成
+    const newDelay = delay + 10; // 延迟0.5秒以等待父树枝生长完成
 
     // 创建子树枝，使用新的延迟时间
     createBranch(branch, 0, y, newLength, 360 - angle - 20, depth - 1, newDelay);
@@ -37,7 +37,8 @@ function createBranch(parent, x, y, length, angle, depth, delay) {
 const tree = document.querySelector('.tree');
 const trunk = tree.querySelector('.trunk');
 
-// 从树干开始生成树枝
+/*/ 从树干开始生成树枝
 createBranch(trunk, 5, 100, 100, 0, 6, animationDelay);
 createBranch(trunk, 5, 100, 100, 30, 6, animationDelay);
 createBranch(trunk, 5, 100, 100, -30, 6, animationDelay);
+*/
