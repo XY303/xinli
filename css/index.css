@@ -1,0 +1,105 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.background {
+    height: 100%;
+    background: linear-gradient(270deg, #001f3f, #450071, #004d4d, #450071, #001f3f, #001f3f);
+    background-size: 2000% 100%; /* 背景大小设置为200% */
+    animation: gradientAnimation 100s linear infinite; /* 使用线性动画 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; /* 确保在底层 */
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; } /* 从左到右滚动 */
+}
+
+
+#time {
+    text-align: left;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#text1 {
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(0%, 0%);
+}
+
+#text2 {
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    transform: translate(-100%, 0%);
+}
+
+#text3 {
+    text-align: left;
+    position: fixed;
+    top: 100%;
+    left: 0;
+    transform: translate(0%, -100%);
+}
+
+#text4 {
+    text-align: left;
+    position: fixed;
+    top: 100%;
+    right: 0;
+    transform: translate(0%, -100%);
+}
+
+.size1 {
+    font-size: 20px;
+}
+
+.size2 {
+    font-size: unset;
+}
+@keyframes flash {
+    70%, 100% { opacity: 0; }
+}
+
+.flash {
+    animation: flash 300ms linear 2; /* 闪烁3次，每次0.5秒 */
+    animation-fill-mode: forwards;
+}
+/* 垂直线及分支 */
+.container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.vertical-line {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+.branch {
+    position: absolute;
+    transform: rotate(300deg);
+    transform-origin: left center;
+    width: 2px;
+    height: 100px;
+    background-color: whitesmoke;
+}
