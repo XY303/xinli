@@ -5,7 +5,7 @@ function showNextCharacter(divId, textUrl, switchId) {
 
     if(textUrl.includes('txt')){
         // 加载文本文档
-        fetch("\\text\\" + textUrl)
+        fetch(window.location.pathname + "text/" + textUrl)
             .then(response => response.text())
             .then(data => {
                 text = data;

@@ -22,7 +22,7 @@ const colors = ['#ffebfc','#af7b7b', '#599859', '#8888df', '#ffff00']; // 颜色
 let index = 0;
 changeBackgroundColor();
 function changeBackgroundColor() {
-    if(colors[index].length === 0) return;
+    if(index === 5) return;
     document.body.style.backgroundColor = colors[index];
     index++;
 }
