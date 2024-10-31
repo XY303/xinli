@@ -4,8 +4,21 @@
     <meta charset="UTF-8">
     <title>树不断长大的动画</title>
     <link rel="stylesheet" href="css/tree.css">
+    <style>
+        #audio {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #audi {
+        display: none; /* 隐藏播放控件 */
+    }
+    </style>
 </head>
 <body class="scaled"><!--style="--scale-factor: 7;"-->
+<div id="audio">
+<audio id="audi" src="1.mp3" controls loop></audio>
+</div>
 <h1 id="title"></h1>
 <div class="tree">
     <div id="textL">
