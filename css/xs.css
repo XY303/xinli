@@ -1,0 +1,8 @@
+#text-content {
+    font-size: var(--size);
+    font-family: "luoli", system-ui;
+    color: black;
+    padding: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}

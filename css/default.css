@@ -1,0 +1,56 @@
+/*////////////////////-----总配置区-----//////////////////////*/
+/*字体设置*/
+@font-face {
+    font-family: luoli;
+    src: url("/loli.ttf")
+}
+/*背景设置*/
+body {
+    background-color: #343541;
+}
+h1 {
+    background-color: #202123;
+    font-size: 20px;
+    text-align: center;
+    color: #ADADAD;
+}
+/*按钮设置*/
+/*按钮默认设置*/
+.Button {
+    background-image: url('/css/resource/img/button.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+}
+/*按钮浮动文字设置*/
+.Button span {
+    display: inline-block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+.Button:hover span {
+    transform: scale(1.2);
+}
+/*按钮动画效果设置*/
+.Button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.5s;
+}
+.Button:hover::before {
+    right: 0;
+}
+/**/

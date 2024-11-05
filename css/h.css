@@ -1,0 +1,73 @@
+/*背景设置*/
+body {
+    background-color: #656e7a;
+}
+/*字体设置*/
+@font-face {
+    font-family: luoli;
+    src:url("/loli.ttf")
+}
+/*按钮设置*/
+.Button#amsr {
+    background-image: url('/css/resource/img/asmr.png');
+   padding: 100px 200px;
+}
+.Button#hxswtj {
+    background-image: url('/css/resource/img/hxswtj.png');
+   padding: 100px 200px;
+}
+.Button#xs{
+    background-image: url('/css/resource/img/xs.png');
+    color: black;
+   padding: 100px 200px;
+}
+.Button {
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+
+.Button span {
+  display: inline-block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Button:hover span {
+  transform: scale(3);
+}
+
+.Button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 0.5s;
+}
+
+.Button:hover::before {
+  height: 0;
+}
+
+/*/////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+///////////////////////-----小说区-----/////////////////////////////////*/
+#text-content {
+    font-size: var(--size);
+    font-family: "luoli", system-ui;
+    color: black;
+    padding: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}

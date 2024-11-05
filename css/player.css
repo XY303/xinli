@@ -1,0 +1,52 @@
+body {
+    background-color: #343541;
+}
+/*--------------------------------------*/
+/*-----------------按钮区----------------*/
+/*--------------------------------------*/
+/* 带图标的按钮 */
+/* 按钮样式 */
+.Button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #B8B8B8; /* 初始背景颜色 */
+  color: #fff; /* 文字颜色 */
+  transition: background-color 0.3s; /* 添加过渡效果 */
+  position: relative; /* 用于定位伪元素 */
+  overflow: hidden; /* 隐藏溢出部分 */
+}
+
+/* 鼠标悬停时的效果 */
+.Button:hover {
+  background-color: #343541; /* 悬停时的背景颜色 */
+}
+
+/* 随机模式切换 */
+.Button#playModButton:hover, .Button#playModButton:focus, .Button#playModButton:active {
+    background-color: #343541;
+    color: white;
+}
+/*--------------------------------*/
+/*---------------歌词区------------*/
+/*--------------------------------*/
+/*设置歌词显示区域*/
+#lyrics {
+    width: suto;
+    padding: 5px;
+    border: 3px solid gray;
+    margin: 10px;
+    height: 90px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+/* 歌词正常状态 */
+.lyric-line {
+    color: #fae6e6;
+}
+/* 歌词高亮状态 */
+.lyric-line.active {
+    color: red;
+    font-size: 25px;
+}
