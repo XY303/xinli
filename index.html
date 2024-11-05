@@ -1,45 +1,21 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>树不断长大的动画</title>
-    <link rel="stylesheet" href="css/tree.css">
-    <style>
-        #audio {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    #audi {
-        display: none; /* 隐藏播放控件 */
-    }
-    </style>
+<meta charset="UTF-8">
+<title>xy303 私人网站</title>
+<link rel="stylesheet" href="/css/default.css">
 </head>
-<body class="scaled"><!--style="--scale-factor: 7;"-->
-<div id="audio">
-<audio id="audi" src="1.mp3" controls loop></audio>
-</div>
-<h1 id="title"></h1>
-<div class="tree">
-    <div id="textL">
-       <div id="1l" class="leftText"></div>
-       <div id="2l" class="leftText"></div>
-       <div id="3l" class="leftText"></div>
-       <div id="4l" class="leftText"></div>
-       <div id="5l" class="leftText"></div>
-    </div>
-    <div id="textR">
-       <div id="1r" class="rightText"></div>
-       <div id="2r" class="rightText"></div>
-       <div id="3r" class="rightText"></div>
-       <div id="4r" class="rightText"></div>
-       <div id="5r" class="rightText"></div>
-    </div>
-    <div class="trunk"></div>
-</div>
-
-<script src="js/tree.js"></script>
-<script src="js/settext.js"></script>
-<script src="js/animation.js"></script>
+<body>
+<h1 id="head">Hello World!</h1>
+<button onclick="window.open('mp3.html')" class="Button"><span>进入:xy303私人音乐播放器</span></button>
+<button onClick="window.open('xs.html')" class="Button"><span>进入:xy303私人小说站</span></button>
+<button onclick="gotoFTP()" class="Button"><span>进入:xy303私人FTP</span></button>
+<br>
+<script src="/js/eihei.js"></script>
+<script>
+        function gotoFTP() {
+            window.location = "http://" + window.location.hostname + ':5623';
+        }
+    </script>
 </body>
 </html>

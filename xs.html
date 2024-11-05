@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="/css/default.css">
+    <style>:root {
+        --stze: 14px
+        }
+    </style>
+  <title>...</title>
+</head>
+<body>
+  <h1>小说</h1>
+    <div id="txtname"></div>
+    <br>
+    <button class="Button" onClick="deductPage(10)">上一页</button>
+    <span id="num"></span>
+    <button class="Button" onClick="addPage(10)">下一页</button>
+    <br>
+    <button class="Button" onClick="sizeup(1)" id="zup">增加字号</button>
+    <button class="Button" onClick="sizedown(1)" id="zdown">减小字号</button>
+    <span id="showSize"></span>
+    <br>
+  <pre id="text-content"></pre>
+    <br>
+    <button class="Button" id="prev">上一页</button>
+    <button class="Button" id="next">下一页</button>
+
+  <script>
+	  var property = {
+		  dir:"/website/xiaoshuo/",
+		  format:".txt"
+	  }
+      if (window.location.origin === 'https://111.161.123.233:53751') {
+        const customStylesheet = document.createElement('link');
+        customStylesheet.rel = 'stylesheet';
+        customStylesheet.href = '/css/disable-custom-fonts.css';
+        document.head.appendChild(customStylesheet);
+      }
+  </script>
+	<script src="/js/showtxt.js"></script>
+	<script src="/js/fileslist.js"></script>
+	<script src="/js/xs.js"></script>
+</body>
+</html>
