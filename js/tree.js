@@ -27,7 +27,7 @@ function createBranch(parent, x, y, length, angle, depth, delay) {
 
     // 计算下一层树枝的参数
     const newLength = length * 0.7;
-    const newDelay = delay + 10; // 延迟0.5秒以等待父树枝生长完成
+    const newDelay = delay + intervalTime / 1000; // 延迟0.5秒以等待父树枝生长完成
 
     // 创建子树枝，使用新的延迟时间
     createBranch(branch, 0, y, newLength, 360 - angle - 20, depth - 1, newDelay);
