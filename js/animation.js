@@ -8,14 +8,16 @@ document.body.addEventListener('click', function() {
 });
 
 const title = ['种子阶段','幼苗阶段','成长期阶段','成熟阶段','衰老阶段','end'];
+
+const intervalTime = 2000;
 function setTitle(n) {
     //document.getElementById('title').innerText = title[n];
     if(title[n] === 'end') return;
     showNextCharacter('title', title[n], 0);
     showNextCharacter(`${n}l`, `${n}l.txt`, 0);
     showNextCharacter(`${n}r`, `${n}r.txt`, 0);
-    setTimeout(() =>setTitle(n+1), 10000);
-    setInterval(changeBackgroundColor, 10000);
+    setTimeout(() =>setTitle(n+1), intervalTime);
+    setInterval(changeBackgroundColor, intervalTime);
 }
 
 const colors = ['#ffebfc','#af7b7b', '#599859', '#8888df', '#ffff00']; // 颜色数组
